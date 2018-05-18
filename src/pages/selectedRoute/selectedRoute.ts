@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, PopoverController } from 'ionic-angular';
-import { TravelInfo2 } from '../travelInfo2/travelInfo2';
+import { NavController } from 'ionic-angular';
 
 @Component({
   selector: 'page-selectedRoute',
@@ -9,15 +8,8 @@ import { TravelInfo2 } from '../travelInfo2/travelInfo2';
 
 export class SelectedRoute {
 
-  constructor(public navCtrl: NavController, public popoverCtrl: PopoverController) {
+  constructor(public navCtrl: NavController) {
 
-  }
-
-  openInfo(myEvent) {   // Skapar en PopOver-sida när man trycker på "i"
-    let popover = this.popoverCtrl.create(TravelInfo2);
-    popover.present({
-      ev: myEvent
-    });
   }
 
 }
